@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: aliceblue;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+}
