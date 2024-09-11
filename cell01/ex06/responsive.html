@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .block1, .block2 {
+            flex: 1; /* Make both blocks take equal width */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .block1 {
+            background-color: red;
+        }
+
+        .block2 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block1">red</div>
+        <div class="block2">blue</div>
+    </div>
+</body>
+</html>
