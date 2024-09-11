@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .todo_list {
+        padding: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    .todo_list:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+<body>
+    <div class="container">
+        <input type="button" value="new" onclick="createNewTask()">
+    </div>
+    <div id = "ft_list"></div>
+    <script src="todo.js"></script>
+</body>
+</html>
