@@ -1,0 +1,121 @@
+body {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    z-index: 2;
+    text-align: center;
+    font-size: 17vw;
+    font-weight: bold;
+    background: linear-gradient(to right, #6482AD, #7FA1C3,#F5EDED,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+
+}
+
+.des{
+    font-size: 2.5vw;
+    text-align: center;
+    translate: 0px -3vw;
+    font-weight: bold;
+    background: linear-gradient(to right, #6482AD, #7FA1C3,#F5EDED,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header.hovered {
+    color: #6482AD; /* ใช้สีนี้เมื่อ hover */
+    background: none;
+    -webkit-background-clip: unset; /* ลบคลิปพื้นหลังเมื่อ hover */
+    -webkit-text-fill-color:#F5EDED; /* ลบการเติมสีเมื่อ hover */
+}
+
+.des.hovered {
+    color: #6482AD; /* ใช้สีนี้เมื่อ hover */
+    background: none;
+    -webkit-background-clip: unset; /* ลบคลิปพื้นหลังเมื่อ hover */
+    -webkit-text-fill-color:#F5EDED; /* ลบการเติมสีเมื่อ hover */
+}
+
+.pic {
+    margin-top: 2vw ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10vw; 
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.image-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.circle-image {
+    width:20vw;
+    height: 20vw;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition for both transform and shadow */
+}
+
+.image-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2vw;
+    font-size: 2vw;
+    color: #ffffff;
+    transition: transform 0.5s ease;
+}
+
+.bg {
+    z-index:0; /* Background is the lowest layer */
+    background: linear-gradient(to top, #6482AD, #F5EDED); /* Background gradient */
+    transition: background-color 0.5s ease, z-index 0.5s ease;  /* Smooth transition for background color */
+    position: absolute; /* Position background behind content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensure background covers the viewport */
+}
+
+.circle-image:hover {
+    border: 5px white solid;
+    border-style:solid ;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.image-container:hover {
+    transform: translateY(-8vw); /* Move container and text up with the image */
+}
+
+.hoverblue{
+    z-index:1;
+    background-color: #6482AD;
+
+}
+
+.hoverpink{
+    z-index:1;
+    background-color: pink;
+
+}
+.text-bold {
+    font-weight: bold;
+}
+
+.text-lite {
+    font-weight: lighter;
+}
+
+a {
+    color: white;
+}

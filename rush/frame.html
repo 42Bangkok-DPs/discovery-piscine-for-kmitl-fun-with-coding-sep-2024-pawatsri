@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F5F7F8;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            padding: 20px;
+            max-width: 1200px; /* Limit the container width */
+            margin: 0 auto; /* Center the container */
+        }
+
+        .imageContainer {
+            margin-top: 3%;
+            width: 30vw;
+            height: 30vw;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15%;
+        }
+
+        .imageContainer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nav_bar {
+            display: flex;
+            background-color: #6482AD;
+            justify-content: center;
+            align-items: center;
+            height: 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .nav_bar ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav_bar li {
+            margin: 0 20px;
+        }
+
+        .nav_bar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav_bar a:hover {
+            color: #1A4870;
+        }
+
+        section {
+            padding-top: 3vh;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: auto;
+        }
+
+        .content {
+            padding-top: 5%;
+            margin-right: auto; 
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .icon-container {
+            display: flex; 
+            gap: 40px;
+        }
+
+        .icon {
+            padding-top: 5vh;
+            width: 10vh;
+            height: 10vh;
+            transition: opacity 0.3s ease; 
+        }
+
+        .icon:hover {
+            opacity: 0.5; 
+        }
+
+        hr {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_bar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work & Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="home">
+        <div class="container">
+            <div class="imageContainer">
+                <img src="https://i.ibb.co/cXCMf2S/MyImage.jpg" alt="MyImage">
+            </div>
+            <div class="content">
+                <h1>Hi,</h1>
+                <p>I'm Pawat Sriprom</p>
+                <p>Intra: psriprom</p>
+                <p>Welcome to my Portfolio!</p>
+                <div class="icon-container">
+                    <a href="https://www.facebook.com/pawatsriporm">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook" class="icon">
+                    </a>
+                    <a href="https://www.instagram.com/pawatsrip/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" class="icon">
+                    </a>
+                    <a href="https://github.com/pawatsri">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>My name is Pawat Sriprom. 3rd year IoT and information engineering student.</p>
+        <p>This project was created for 42 Bangkok, Fun with coding.</p>
+    </section>
+
+    <hr>
+
+    <section id="work">
+        <h1>Work & Experience</h1>
+        <p>Internship at Waseda University in Tokyo, Japan.</p>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Email: 65010803@kmitl.ac.th</p>
+        <p>Tel: 092-394-7839</p>
+        <p>Line ID: pawatsriporm</p>
+    </section>
+</body>
+</html>

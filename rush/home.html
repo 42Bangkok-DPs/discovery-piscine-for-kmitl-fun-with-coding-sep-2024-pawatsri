@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="bg">
+    <div class="header">OUR TEAM</div>
+    <div class="des">Discovery_Piscine</div>
+    <div class="pic">
+        <div class="image-container">
+            <a href="frame.html" target="_blank">
+                <img src="https://3dmodels.org/wp-content/uploads/2023/08/28/Minecraft_Steve_3d_model_1000_0001.jpg" id = "pic1" alt ="pic1" class="circle-image">    
+            </a>
+            <p class="image-text text-bold">psriprom</p>
+            
+        </div>
+       <div class="image-container">
+        <a href="theta.html" target="_blank">
+            <img src="https://i.pinimg.com/564x/7c/f2/84/7cf284d55876396d61330308aea1e3a2.jpg" id = "pic2" alt ="pic1" class="circle-image" > 
+        </a>
+            <p class="image-text text-bold">ppurahon</p>
+       </div>
+    </div>
+    <script>
+        // JavaScript to handle background color change on hover
+        document.querySelectorAll('.circle-image').forEach(image => {
+            image.addEventListener('mouseout', () => {
+                document.querySelector('.header').classList.remove('hovered');
+                document.querySelector('.des').classList.remove('hovered');
+                document.body.classList.remove('hoverblue', 'hoverpink');
+                console.log("un hovered")
+            });
+            image.addEventListener('mouseover', () => {
+                document.querySelector('.header').classList.add('hovered');
+                document.querySelector('.des').classList.add('hovered');
+                if (image.id === 'pic1') {
+                    document.body.classList.add('hoverblue');
+                    document.body.classList.remove('hoverpink');
+                } else if (image.id === 'pic2') {
+                    document.body.classList.add('hoverpink');
+                    document.body.classList.remove('hoverblue');
+                }
+                console.log("hover")
+            });
+        });
+    </script>
+</body>
+</html>
