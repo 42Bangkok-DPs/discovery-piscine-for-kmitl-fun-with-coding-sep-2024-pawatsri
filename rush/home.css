@@ -28,17 +28,17 @@ body {
 }
 
 .header.hovered {
-    color: #6482AD; /* ใช้สีนี้เมื่อ hover */
+    color: #6482AD; 
     background: none;
-    -webkit-background-clip: unset; /* ลบคลิปพื้นหลังเมื่อ hover */
-    -webkit-text-fill-color:#F5EDED; /* ลบการเติมสีเมื่อ hover */
+    -webkit-background-clip: unset; 
+    -webkit-text-fill-color:#F5EDED; 
 }
 
 .des.hovered {
-    color: #6482AD; /* ใช้สีนี้เมื่อ hover */
+    color: #6482AD; 
     background: none;
-    -webkit-background-clip: unset; /* ลบคลิปพื้นหลังเมื่อ hover */
-    -webkit-text-fill-color:#F5EDED; /* ลบการเติมสีเมื่อ hover */
+    -webkit-background-clip: unset; 
+    -webkit-text-fill-color:#F5EDED; 
 }
 
 .pic {
@@ -65,7 +65,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition for both transform and shadow */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; 
 }
 
 .image-text {
@@ -77,14 +77,14 @@ body {
 }
 
 .bg {
-    z-index:0; /* Background is the lowest layer */
-    background: linear-gradient(to top, #6482AD, #F5EDED); /* Background gradient */
-    transition: background-color 0.5s ease, z-index 0.5s ease;  /* Smooth transition for background color */
-    position: absolute; /* Position background behind content */
+    z-index:0; 
+    background: linear-gradient(to top, #6482AD, #F5EDED); 
+    transition: background-color 0.5s ease, z-index 0.5s ease;  
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ensure background covers the viewport */
+    height: 100vh; 
 }
 
 .circle-image:hover {
@@ -94,7 +94,7 @@ body {
 }
 
 .image-container:hover {
-    transform: translateY(-8vw); /* Move container and text up with the image */
+    transform: translateY(-8vw); 
 }
 
 .hoverblue{
